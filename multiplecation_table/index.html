@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication Table Generator</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#eef2ff]">
+  <div class="bg-[#e879f9] p-6 rounded-lg shadow-lg text-center">
+    <h1 class="text-2xl font-bold mb-[30px]">Multiplication Table Generator</h1>
+    <div class="flex  gap-4 justify-center ">
+<input type="number" id="startnum" placeholder="Start" min="1" max="100" class="h-[30px] w-[170px]">
+<input type="number" id="endnum" placeholder="End" min="1" max="100" class="h-[30px] w-[150px]">
+</div>
+    <!-- Button to generate the multiplication table -->
+    <div>
+    <button id="generate" class="mt-4 mr-[10px] bg-blue-500 text-white py-2 px-4 rounded">Generate Table</button>
+    <button id="clear" class="mt-4 bg-blue-500 text-white py-2 px-6 rounded">Clear Table</button>
+  </div>
+    <!-- Display area for the multiplication table -->
+    <div id="table-container" class="flex flex-col gap-4 py-2 w-[80%] mx-auto">
+      <div id="top-row" class="flex gap-2"></div>
+      <div id="bottom-row" class="flex gap-2"></div>
+      
+    </div>
+  </div>
+
+  <!-- Include JavaScript -->
+  <script src="value.js"></script>
+</body>
